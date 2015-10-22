@@ -1,0 +1,19 @@
+.homepage-callouts .callout {
+
+	padding: 100px 0;
+
+	.callout-content {
+		color: #fff;
+
+		@include mq(medium) {
+			max-width: 500px;
+		}
+	}
+
+	h2.callout-title {
+		color: #fff;
+		font-family: georgia, serif;
+		font-style: italic;
+		font-size: 3em;
+	}
+}

@@ -1,0 +1,49 @@
+// ================================
+// Header
+// ================================
+
+.site-header {
+	background: #fff;
+    padding: 10px;
+
+	@include mq(large) {
+		padding: 15px 0;
+	}
+
+	.header-logo {
+		@include mq(large) {
+			@include span(2);
+		}
+
+		a {
+			display: inline-block;
+		}
+
+		img {
+			max-width: 120px;
+		}
+	}
+
+	.header-navigation {
+		@include mq(large) {
+			@include span(8);
+		}
+	}
+
+	.header-phone {
+		display: block;
+		padding: 20px;
+		font-size: 28px;
+		text-align: center;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: bold;
+
+		@include mq(large) {
+			@include span(2 last);
+			text-align: left;
+
+		    font-size: 20px;
+		    padding-top: 16px;
+		}
+	}
+}

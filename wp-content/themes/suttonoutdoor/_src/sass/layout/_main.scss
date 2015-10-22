@@ -1,0 +1,22 @@
+// ================================
+// Main
+// ================================
+
+.page-main {
+	@include mq(medium) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+.page-content {
+	@include mq(medium) {
+		@include span(8);
+	}
+}
+
+.page-sidebar {
+	@include mq(medium) {
+		@include span(4);
+	}
+}

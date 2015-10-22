@@ -1,0 +1,17 @@
+.homepage-slider {
+	.slide {
+		background-color: $green;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+	    height: 400px;
+	}
+
+	.slide-content {
+		color: #fff;
+		text-align: center;
+
+	    padding-top: 100px;
+	}
+}

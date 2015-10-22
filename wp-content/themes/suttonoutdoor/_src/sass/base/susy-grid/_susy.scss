@@ -1,0 +1,24 @@
+// Susy
+// ====
+
+@import 'susy/language/susy';
+
+
+/* Changing Susy default global settings */
+$susy: (
+  columns: 12,
+  container: 1120px,
+  container-position: center,
+  global-box-sizing: border-box,
+  gutter-position: inside,
+  gutters: .25,
+);
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+
+.container {
+	@include container;
+	padding: 0 20px;
+}
