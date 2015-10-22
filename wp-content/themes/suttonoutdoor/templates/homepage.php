@@ -44,7 +44,9 @@ $pid = get_the_id();
 		<?php the_content(); ?>
 	</div>
 	<div class="page-sidebar">
-		<h2>Sidebar</h2>
+		<?php if ( is_active_sidebar( 'sidebar_widgets' ) ) : ?>
+			<?php dynamic_sidebar( 'sidebar_widgets' ); ?>
+		<?php endif; ?>
 	</div>
 </div>
 
